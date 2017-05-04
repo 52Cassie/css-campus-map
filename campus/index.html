@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- 网页文档类型声明指出浏览器应该用什么规则集来解释文档中的标记 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+			   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8">
 	<title>campus-map</title>
 	<link rel="stylesheet" type="text/css" href="css/campus.css">
+	<script type="text/javascript" src="http://union.mapbar.com/apis/maps/free?f=mapi&v=31.3&k=aCW9cItqL7sqT7AxaB0zdHZoZSWmbBsuT7JhMHTsMeD6ZIl9NzFsZHT=@JBL979@Iu7lJJZWWq0IDu9xZMzMxq7I9AhH7LAAA6hqzZHZZLTbZZauxlDz7C7DD9ZCFGT="></script>
+	<script type="text/javascript" async src="js/map.js"></script>
+</style>
 </head>
-<body>
-<div class="campus_box1">
+<body onload="initMap()">
+<div id="mapbar" style="width:1430px;height:780px"></div>
+
+<!-- <div class="campus_box1">
 	<div class="shopping_box">
 		<div class="shopping_street"></div>
 	</div>
-	<!-- <div class="library_box">
+	<div class="library_box">
 		<div class="library"></div>
-	</div> -->
-</div>
+	</div>
+</div> -->
 </body>
 </html>
